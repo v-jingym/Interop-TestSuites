@@ -182,152 +182,6 @@ namespace Microsoft.Protocols.TestSuites.MS_ASCMD
                 @"[In ErrorCode] Element ErrorCode in Autodiscover command response (section 2.2.2.1), the number allowed is 0...1 (optional).");
         }
 
-        ///  Verify ProposedEndTime element for Attendee in Sync command.
-        /// </summary>
-        private void VerifyProposedEndTimeElement(string ProposedEndTime)
-        {
-            Site.Assert.IsTrue(this.activeSyncClient.ValidationResult, "The schema validation result should be true.");
-            Site.Assert.IsNotNull(ProposedEndTime, "The ErrorCode element should not be null.");
-
-            // Add the debug information.
-            Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R69901710");
-
-            // If the schema validation result is true and ProposedEndTime is not null, this requirement can be verified.
-            Site.CaptureRequirement(
-                69901710,
-                @"[In ProposedEndTime] Element ProposedEndTime in Sync command response (section 2.2.1.21), the parent element is MeetingRequest ([MS-ASEMAIL] section 2.2.2.48).");
-
-            // Add the debug information.
-            Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R69901711");
-
-            // If the schema validation result is true and ProposedEndTime is not null, this requirement can be verified.
-            Site.CaptureRequirement(
-                69901711,
-                @"[In ProposedEndTime] None [Element ProposedEndTime in Sync command response (section 2.2.1.21) has no child element.]");
-
-            // Add the debug information.
-            Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R69901712");
-
-            // If the schema validation result is true and ProposedEndTime is not null, this requirement can be verified.
-            Site.CaptureRequirement(
-                69901712,
-                @"[In ProposedEndTime] Element ProposedEndTime in Sync command response (section 2.2.1.21), the data type is Compact DateTime ([MS-ASDTYPE] section 2.7.2).");
-
-            // Add the debug information.
-            Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R69901713");
-
-            // If the schema validation result is true and ProposedEndTime is not null, this requirement can be verified.
-            Site.CaptureRequirement(
-                69901713,
-                @"[In ProposedEndTime] Element ProposedEndTime in Sync command response (section 2.2.1.21), the number allowed is 0...1 (optional)");
-
-            // Add the debug information.
-            Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R69901714");
-
-            // If the schema validation result is true and ProposedEndTime is not null, this requirement can be verified.
-            Site.CaptureRequirement(
-                69901714,
-                @"[In ProposedEndTime] Element ProposedEndTime in Sync command response (section 2.2.1.21), the parent element is Attendee
-([MS-ASCAL] section 2.2.2.3).");
-
-            // Add the debug information.
-            Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R69901715");
-
-            // If the schema validation result is true and ProposedEndTime is not null, this requirement can be verified.
-            Site.CaptureRequirement(
-                69901715,
-                @"[In ProposedEndTime] None [Element ProposedEndTime in Sync command response (section 2.2.1.21) has no child element.]");
-
-            // Add the debug information.
-            Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R69901716");
-
-            // If the schema validation result is true and ProposedEndTime is not null, this requirement can be verified.
-            Site.CaptureRequirement(
-                69901716,
-                @"[In ProposedEndTime] Element ProposedEndTime in Sync command response (section 2.2.1.21), the data type is Compact DateTime ([MS-ASDTYPE] section 2.7.2)");
-
-            // Add the debug information.
-            Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R69901717");
-
-            // If the schema validation result is true and ProposedEndTime is not null, this requirement can be verified.
-            Site.CaptureRequirement(
-                69901717,
-                @"[In ProposedEndTime] Element ProposedEndTime in Sync command response (section 2.2.1.21), the number allowed is 0...1 (optional).");
-        }
-
-        /// <summary>
-        ///  Verify ProposedStartTime element for Attendee in Sync command.
-        /// </summary>
-        private void VerifyProposedStartTimeElement()
-        {
-            // Add the debug information.
-            Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R69901731");
-
-            // If the schema validation result is true and ProposedStartTime is not null, this requirement can be verified.
-            Site.CaptureRequirement(
-                69901731,
-                @"[In ProposedStartTime] Element ProposedStartTime in Sync command response (section 2.2.1.21), the parent element is MeetingRequest
-([MS-ASEMAIL] section.");
-
-            // Add the debug information.
-            Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R69901732");
-
-            // If the schema validation result is true and ProposedStartTime is not null, this requirement can be verified.
-            Site.CaptureRequirement(
-                69901732,
-                @"[In ProposedStartTime] None [Element ProposedStartTime in Sync command response (section 2.2.1.21), has no child element.");
-
-            // Add the debug information.
-            Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R69901733");
-
-            // If the schema validation result is true and ProposedStartTime is not null, this requirement can be verified.
-            Site.CaptureRequirement(
-                69901733,
-                @"[In ProposedStartTime] Element ProposedStartTime in Sync command response (section 2.2.1.21), the data type is Compact DateTime ([MS-ASDTYPE].");
-
-            // Add the debug information.
-            Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R69901734");
-
-            // If the schema validation result is true and ProposedStartTime is not null, this requirement can be verified.
-            Site.CaptureRequirement(
-                69901734,
-                @"[In ProposedStartTime] Element ProposedStartTime in Sync command response (section 2.2.1.21), the number allowed is 0...1 (optional).");
-
-            // Add the debug information.
-            Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R69901735");
-
-            // If the schema validation result is true and ProposedStartTime is not null, this requirement can be verified.
-            Site.CaptureRequirement(
-                69901735,
-                @"[In ProposedStartTime] Element ProposedStartTime in Sync command response (section 2.2.1.21), the parent element is Attendee
-([MS-ASCAL] section 2.2.2.3)");
-
-            // Add the debug information.
-            Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R69901736");
-
-            // If the schema validation result is true and ProposedStartTime is not null, this requirement can be verified.
-            Site.CaptureRequirement(
-                69901736,
-                @"[In ProposedStartTime] None [Element ProposedStartTime in Sync command response (section 2.2.1.21), has no child element.]");
-
-            // Add the debug information.
-            Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R69901737");
-
-            // If the schema validation result is true and ProposedStartTime is not null, this requirement can be verified.
-            Site.CaptureRequirement(
-                69901737,
-                @"[In ProposedStartTime] Element ProposedStartTime in Sync command response (section 2.2.1.21), the data type is Compact DateTime ([MS-ASDTYPE] section 2.7.2).");
-
-            // Add the debug information.
-            Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R69901738");
-
-            // If the schema validation result is true and ProposedStartTime is not null, this requirement can be verified.
-            Site.CaptureRequirement(
-                69901738,
-                @"[In ProposedStartTime] Element ProposedStartTime in Sync command response (section 2.2.1.21), the number allowed is 0...1 (optional).");
-
-        }
-
         /// <summary>
         /// Verify Status element for ResolveRecipients.
         /// </summary>
@@ -902,37 +756,6 @@ namespace Microsoft.Protocols.TestSuites.MS_ASCMD
                 Site.CaptureRequirement(
                     66250804,
                     @"[In Forwardee] Element Forwardee in Sync command response (section 2.2.1.21), the number allowed is 1…N (required).");
-                // Add the debug information.
-                Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R68651708");
-
-                // If the schema validation result is true and Name (SmartForward and Sync) is not null, this requirement can be verified.
-                Site.CaptureRequirement(
-                    68651708,
-                    @"[In Name (SmartForward and Sync)] Element Name in Sync command response (section 2.2.1.21), the parent element is Forwardee (section 2.2.3.78).");
-
-                // Add the debug information.
-                Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R68651709");
-
-                // If the schema validation result is true and Name (SmartForward and Sync) is not null, this requirement can be verified.
-                Site.CaptureRequirement(
-                    68651709,
-                    @"[In Name (SmartForward and Sync)] None [Element Name in Sync command response (section 2.2.1.21) has no child element.].");
-
-                // Add the debug information.
-                Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R68651710");
-
-                // If the schema validation result is true and Name (SmartForward and Sync) is not null, this requirement can be verified.
-                Site.CaptureRequirement(
-                    68651709,
-                    @"[In Name (SmartForward and Sync)] Element Name in Sync command response (section 2.2.1.21), the data type is string ([MS-ASDTYPE] section 2.7).");
-
-                // Add the debug information.
-                Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R68651711");
-
-                // If the schema validation result is true and Name (SmartForward and Sync) is not null, this requirement can be verified.
-                Site.CaptureRequirement(
-                    68651709,
-                    @"[In Name (SmartForward and Sync)] Element Name in Sync command response (section 2.2.1.21), the number allowed is 0...1 (optional).");
 
                 this.VerifyContainerDataType();
 
@@ -7535,39 +7358,6 @@ namespace Microsoft.Protocols.TestSuites.MS_ASCMD
             if (findResponse.ResponseData.Response != null)
             {
                 // Add the debug information.
-                Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R99910");
-
-                // If the schema validation result is true, this requirement can be verified.
-                Site.CaptureRequirement(
-                    99910,
-                    @"[In In Result (Find)] Element Result in Find command response (section 2.2.1.2), the parent element is Search (section 2.2.3.153.2).");
-
-                // Add the debug information.
-                Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R99911");
-
-                // If the schema validation result is true, this requirement can be verified.
-                Site.CaptureRequirement(
-                    99911,
-                    @"[In In Result (Find)] Element Result in Find command response (section 2.2.1.2), the child element is airsync:Class (section 2.2.3.27.1),airsync:ServerId (section 2.2.3.166.1),airsync:CollectionId (section 2.2.3.30.1),Properties (section 2.2.3.139.1).");
-
-                // Add the debug information.
-                Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R99912");
-
-                // If the schema validation result is true, this requirement can be verified.
-                Site.CaptureRequirement(
-                    99912,
-                    @"[In Result (Find)] Element Result in Find command response (section 2.2.1.2), the data type is container ([MS-ASDTYPE] section2.2 .");
-
-                // Add the debug information.
-                Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R99913");
-
-                // If the schema validation result is true, this requirement can be verified.
-                Site.CaptureRequirement(
-                    99913,
-                    @"[In Result (Find)] Element Result in Find command response (section 2.2.1.2), the number allowed is 0...1 (optional).");
-
-                this.VerifyContainerDataType();
-                // Add the debug information.
                 Site.Log.Add(LogEntryKind.Debug, "Verify MS-ASCMD_R70481804");
 
                 // If the schema validation result is true, this requirement can be verified.
@@ -10656,17 +10446,6 @@ OofMessage (section 2.2.3.117)");
                                                                 }
                                                             
                                                         }
-                                                        if (((MeetingRequest)add.ApplicationData.Items[i]).ProposedEndTime != null)
-                                                        {
-                                                            String ProposedEndTime = ((MeetingRequest)add.ApplicationData.Items[i]).ProposedEndTime;
-                                                            VerifyProposedEndTimeElement(ProposedEndTime);
-                                                        }
-
-                                                        if (((MeetingRequest)add.ApplicationData.Items[i]).ProposedStartTime != null)
-                                                        {
-                                                            String ProposedStartTime = ((MeetingRequest)add.ApplicationData.Items[i]).ProposedStartTime;
-                                                            VerifyProposedEndTimeElement(((MeetingRequest)add.ApplicationData.Items[i]).ProposedStartTime);
-                                                        }
                                                     }
                                                 }
                                             }
@@ -10734,21 +10513,6 @@ OofMessage (section 2.2.3.117)");
                                                             {
                                                                 VerifyForwardeeElementForSyncResponses(forwardee);
                                                             }
-                                                        }
-                                                        if (((MeetingRequest)change.ApplicationData.Items[i]).ProposedEndTime != null)
-                                                        {
-
-                                                            String ProposedEndTime = ((MeetingRequest)change.ApplicationData.Items[i]).ProposedEndTime;
-                                                            VerifyProposedEndTimeElement(ProposedEndTime);
-
-                                                        }
-
-                                                        if (((MeetingRequest)change.ApplicationData.Items[i]).ProposedEndTime != null)
-                                                        {
-
-                                                            String ProposedStartTime = ((MeetingRequest)change.ApplicationData.Items[i]).ProposedStartTime;
-                                                            VerifyProposedEndTimeElement(ProposedStartTime);
-
                                                         }
                                                     }
                                                 }
